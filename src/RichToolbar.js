@@ -247,6 +247,7 @@ export default class RichToolbar extends Component {
   }
 
   _renderAction(action, selected) {
+    console.log("Selected "+selected);
     return this.props.renderAction
       ? this.props.renderAction(action, selected)
       : this._defaultRenderAction(action, selected);
